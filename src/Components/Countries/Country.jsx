@@ -13,7 +13,7 @@ const Country = ({ country }) => {
   };
 
   return (
-    <div className="country">
+    <div className={visited ? 'country-visited' : 'country'}>
       <img
         className="country-flag"
         src={country.flags.flags.png}
@@ -29,7 +29,7 @@ const Country = ({ country }) => {
       </p>
       <p>Area : {country.area.area}</p>
       <p>{country.area.area > 100000 ? "Big" : "Small"}</p>
-      <button className={`btn ${visited && 'btn-visited'}`} onClick={handleVisitBtn}>
+      <button className={visited ? 'btn-visited' : 'btn'} onClick={handleVisitBtn}>
         {visited ? "Visited" : "Not Visited"}
       </button>
     </div>

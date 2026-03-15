@@ -36,7 +36,6 @@
 }
 .country{
   border: 2px solid red;
-  box-shadow: 2px 2px 2px red;
   border-radius: 20px;
   padding: 20px;
 }
@@ -62,6 +61,11 @@
   margin-top: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+.country-visited{
+  background-color: rgba(52, 75, 52, 0.673);
+   border-radius: 20px;
+  padding: 20px;
 }
 
 
