@@ -35,13 +35,13 @@
   gap: 10px;
 }
 .country{
-  background-color: white;
-  box-shadow: 2px 2px 2px white;
+  border: 2px solid red;
+  box-shadow: 2px 2px 2px red;
   border-radius: 20px;
   padding: 20px;
 }
 .country-flag{
-  width: 200px;
+  width: 80%;
 }
 @media (prefers-color-scheme: dark) {
   :root {
