@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Country = ({ country }) => {
+const Country = ({ country , handleVisitedCountries }) => {
   // console.log(country.population.population);
   const [visited, setVisited] = useState(false);
   const handleVisitBtn = () => {
@@ -10,6 +10,7 @@ const Country = ({ country }) => {
     } else {
       setVisited(true);
     }
+    handleVisitedCountries(country)
   };
 
   return (

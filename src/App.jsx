@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-          <h1>All countries</h1>
+          
           <Suspense fallback={<h2>countries loading..</h2>}>
            <Countries countriesPromise ={countriesPromise}></Countries>
 
