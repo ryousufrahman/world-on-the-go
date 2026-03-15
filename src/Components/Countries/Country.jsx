@@ -6,11 +6,9 @@ const Country = ({ country }) => {
   const [visited, setVisited] = useState(false);
   const handleVisitBtn = () => {
     if (visited) {
-        setVisited(false)
-        
-    }
-    else{
-        setVisited(true)
+      setVisited(false);
+    } else {
+      setVisited(true);
     }
   };
 
@@ -31,7 +29,9 @@ const Country = ({ country }) => {
       </p>
       <p>Area : {country.area.area}</p>
       <p>{country.area.area > 100000 ? "Big" : "Small"}</p>
-      <button onClick={handleVisitBtn}>{visited? 'Visited' :"Not Visited"}</button>
+      <button className={`btn ${visited && 'btn-visited'}`} onClick={handleVisitBtn}>
+        {visited ? "Visited" : "Not Visited"}
+      </button>
     </div>
   );
 };
