@@ -40,6 +40,9 @@
   border-radius: 20px;
   padding: 20px;
 }
+.country-flag{
+  width: 200px;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
