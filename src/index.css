@@ -43,6 +43,17 @@
 .country-flag{
   width: 80%;
 }
+button{
+  padding: 10px 15px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 1000px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
